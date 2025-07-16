@@ -7,8 +7,6 @@ import { useSidebar } from "@/components/ui/sidebar";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import logo from "@/public/logo.png";
-// import Logo from "./Logo";
-import Link from "next/link";
 
 const Headers = ({ user }: { user: User }) => {
   const { open } = useSidebar();
@@ -27,16 +25,12 @@ const Headers = ({ user }: { user: User }) => {
         )
       ) : !title ? (
         <div className="flex items-center gap-5">
-          <Link href="/">
-            <Image src={logo} alt="logo" width={50} height={50} />
-          </Link>
+          <Image src={logo} alt="logo" width={50} height={50} />
           <p className="text-2xl font-medium uppercase">Home</p>
         </div>
       ) : (
         <div className="flex items-center gap-2">
-          <Link href="/">
-            <Image src={logo} alt="logo" width={50} height={50} />
-          </Link>
+          <Image src={logo} alt="logo" width={50} height={50} />
           <p className="text-2xl font-medium uppercase">{title}</p>
         </div>
       )}
