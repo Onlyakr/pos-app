@@ -11,7 +11,7 @@ interface Product {
   price: number;
 }
 
-const headers: string[] = ["ID", "Category", "Name", "Amount", "Price"];
+// const headers: string[] = ["ID", "Category", "Name", "Amount", "Price"];
 
 const products: Product[] = [
   { id: 1, category: "Category 1", name: "Product 1", amount: 100, price: 100 },
